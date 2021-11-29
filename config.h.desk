@@ -74,5 +74,5 @@ static const struct arg args[] = {
     { run_command, " %s |", "cat ~/.pomodoro" },
 	{ ipv4, " e:%s |",	"eno2" },
 	{ run_command, " %s |",  "/bin/sh -c \"amixer get Master | tail -n1 | grep -Po '\\[\\K[^%]*' | head -n1\"" },	
-	{ datetime, " %s ", "%a %b %d %R:%S" },
+	{ datetime, " %s ", "%a %b %d %R:%S %Z %z" },
 };
