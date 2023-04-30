@@ -71,11 +71,9 @@ static const struct arg args[] = {
 	
 	{ battery_state, " %s", "BAT0" },
 	{ battery_perc, " %s%% |", "BAT0" },
+    { run_command, " %s |", "/bin/sh -c \"curl wttr.in/Orem?format='%C+%t'\""},
 	{ run_command, " %s |",  "/bin/sh -c \"amixer get Master | tail -n1 | grep -Po '\\[\\K[^%]*' | head -n1\"" },	
 	{ ipv4, " w:%s |",	"wlp1s0" },
 //	{ ipv4, " e:%s |",	"eth0" },
-/* I need to use a script to use the "amixer get Master" command
- * to filter out when the mute is enabled by the "on/off" string.
- */
 	{ datetime, " %s ",           "%a %b %d %R:%S" },
 };
