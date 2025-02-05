@@ -73,7 +73,7 @@ static const struct arg args[] = {
 	{ battery_state, " %s", "BAT0" },
 	{ battery_perc, " %s%% |", "BAT0" },
 	{ run_command, " %s |", "/bin/sh -c \"pamixer --get-volume-human\"" },
-	{ ipv4, " %s |",	"wlp2s0f0" },
+	{ ipv4, " %s |",	"wlp113s0f0" },
 	{ run_command, " %s |",	"ip addr show gpd0 | awk '/state / {print $9}'" },
 	{ datetime, " %s ",           "%a %b %d %R:%S %Z %z" },
 };
